@@ -1,0 +1,40 @@
+<div id="shell">
+  <h3>The Bash Shell</h3>
+  <p>
+    Bash is a commonly-used shell that gives you the power to do
+    tasks more quickly.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows users only: Setting up software you can use to connect to your cloud computer</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="shell-windows">
+Open your Command Prompt app by searching for "cmd". At the command prompt, type <code>ssh</code>. Confirm that this prints out the usage information for the <code>ssh</code> command - if this is the case, then you do not need to install anything. However, if the result is <code>Command not found</code> then you have two options:
+        <ul>
+          <li>Set up the Ubuntu Subsystem for Windows. This option is only available for Windows 10 - detailedinstructions are available at <a href="https://docs.microsoft.com/en-us/windows/wsl/install">https://docs.microsoft.com/en-us/windows/wsl/install</a>.</li>
+          <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>. Run the installer and follow the steps below:</li>
+            <ol>
+              <li>Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.</li>
+	      <li><strong>From the dropdown menu select "Use the Nano editor by default" (NOTE: you will need to scroll up to find it) and click on "Next".</strong></li>
+	      <li>On the page that says "Adjusting the name of the initial branch in new repositories", ensure that "Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.</li>
+              <li>Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)</li>
+              <li>Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".</li>
+              <li>Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".</li>
+              <li><strong>Ensure that "Use Windows' default console window" is selected and click on "Next".</strong></li>
+              <li>Ensure that "Default (fast-forward or merge) is selected and click "Next".</li>
+              <li>Ensure that "Git Credential Manager Core" is selected and click on "Next".</li>
+              <li>Ensure that "Enable file system caching" is selected and click on "Next".</li>
+              <li>Click on "Install".</li>
+              <li>Click on "Finish".</li>
+              <li>Check the settings for you your "HOME" environment variable.</li>
+              <li>If your "HOME" environment variable is not set (or you don't know what this is):
+Open command prompt (Open Start Menu then type cmd and press [Enter]). Type the following line into the command prompt window exactly as shown: <code>setx HOME "%USERPROFILE%"</code>.  Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code>.  Quit command prompt by typing exit then pressing [Enter].
+           </ol>
+         </ul>
+      </article>
+    </div>
+  </div>
+</div>
